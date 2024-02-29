@@ -4,16 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>01_Home_Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
-    <picture class="header__logo">
-      <source src="img/fir-tree.svg">
-      <img class="header__logo__pic" src="img/fir-tree.svg" alt="logo">
-    </picture>
-    <h1 class="header__title">Merry Christmas</h1>
-    <p class="header__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-    <button class="header__btn">Join Us</button>
+    <div class="container">
+      <div class="header__logo-btn">
+        <picture class="header__logo">
+          <source src="img/fir-tree.svg">
+          <img class="header__logo__pic" src="img/fir-tree.svg" alt="logo">
+        </picture>
+        <button class="burger"></button>
+      </div>
+      <h1 class="header__title">Merry<br>Christmas</h1>
+      <p class="header__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <a class="header__btn" href="#">Join Us</a>
+    </div>
   </header>
+  <section class="donate">
+    <div class="container">
+      <div class="donate__empty">
+      </div>
+      <div class="donate__content">
+        <h2 class="donate__content__title">Donate &amp; Gift</h2>
+        <p class="donate__content__txt">A Christmas gift or Christmas present is a gift given in celebration of Christmas. Christmas      gifts are often exchanged on Christmas Day itself, December 25, or on the last day of the twelve-day Christmas season, Twelfth Night (January 5). The practice of giving gifts during Christmastide, according to Christian tradition, is symbolic of the presentation of the gifts by the Three Wise Men to the infant Jesus.</p>
+        <p class="donate__content__txt">The tradition was also embraced by retailers, for whom the weeks and, eventually, the entire month before Christmas became a very profitable period. Around the turn of the 20th century retailers started directing marketing efforts at children in the hopes that they would entice the parents to buy more goods.
+        </p>
+        <a href="#" class="donate__content__btn">Donate</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
