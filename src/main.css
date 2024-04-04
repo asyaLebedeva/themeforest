@@ -7,19 +7,3 @@
     font-family: "Arimo", system-ui, sans-serif;
   }
 }
-
-/*.donate__title {
-  position: relative;
-}
-
-.donate__title::after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 50px;
-height: 3px;
-background-color: #e5e5e5;
-}*/
-
-
