@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         'hand-pattern': "url('../img/hand.svg')",
+        'gift-pattern': "url('../img/icon-gift.svg')"
       }
     },
     plugins: [],
