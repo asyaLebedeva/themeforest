@@ -3,9 +3,12 @@ module.exports = {
   content: ['index.html'],
   theme: {
     container: {
-      'max-width': '1170px',
+      center: 'true',
     },
     extend: {
+      width: {
+        'mxWidth': '1170px',
+      },
       translate: {
         '45': '-45px',
       },
@@ -14,7 +17,17 @@ module.exports = {
       },
       backgroundImage: {
         'hand-pattern': "url('../img/hand.svg')",
-        'gift-pattern': "url('../img/icon-gift.svg')"
+        'gift-pattern': "url('../img/icon-gift.svg')",
+        'winter': "url('../img/winter.svg')",
+      },
+      colors: {
+        darkPink: '#d93939',
+        myPink: '#ff5a5a',
+        dirtBlue: '#345b6e',
+        dirtWhite: 'ccc',
+        mbYellow: 'e5e5e5',
+        hzGrey: '#6697ae',
+        lightGrey: '#f9f9f9',
       }
     },
     plugins: [],
