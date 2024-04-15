@@ -580,6 +580,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -588,32 +592,20 @@ video {
   position: relative;
 }
 
-.left-\[20px\] {
-  left: 20px;
+.left-\[-25rem\] {
+  left: -25rem;
 }
 
-.top-\[20px\] {
-  top: 20px;
+.left-\[20px\] {
+  left: 20px;
 }
 
 .top-0 {
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.-left-\[25rem\] {
-  left: -25rem;
-}
-
-.left-\[-25rem\] {
-  left: -25rem;
-}
-
-.z-10 {
-  z-index: 10;
+.top-\[20px\] {
+  top: 20px;
 }
 
 .mx-auto {
@@ -634,12 +626,20 @@ video {
   margin-bottom: 100px;
 }
 
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
 .mb-\[40px\] {
   margin-bottom: 40px;
 }
 
-.mb-\[58px\] {
-  margin-bottom: 58px;
+.mb-\[42px\] {
+  margin-bottom: 42px;
+}
+
+.mb-\[67px\] {
+  margin-bottom: 67px;
 }
 
 .mr-\[20px\] {
@@ -650,44 +650,12 @@ video {
   margin-right: 30px;
 }
 
-.mb-\[30px\] {
-  margin-bottom: 30px;
+.mr-\[49px\] {
+  margin-right: 49px;
 }
 
-.mb-\[20px\] {
-  margin-bottom: 20px;
-}
-
-.mb-\[15px\] {
-  margin-bottom: 15px;
-}
-
-.mb-\[55px\] {
-  margin-bottom: 55px;
-}
-
-.mb-\[45px\] {
-  margin-bottom: 45px;
-}
-
-.mb-\[50px\] {
-  margin-bottom: 50px;
-}
-
-.mb-\[25px\] {
-  margin-bottom: 25px;
-}
-
-.mb-\[23px\] {
-  margin-bottom: 23px;
-}
-
-.mb-\[43px\] {
-  margin-bottom: 43px;
-}
-
-.mb-\[42px\] {
-  margin-bottom: 42px;
+.mr-\[30pxs\] {
+  margin-right: 30pxs;
 }
 
 .inline-block {
@@ -710,8 +678,16 @@ video {
   height: 505px;
 }
 
+.h-\[554px\] {
+  height: 554px;
+}
+
 .h-\[65px\] {
   height: 65px;
+}
+
+.h-\[420px\] {
+  height: 420px;
 }
 
 .w-1\/2 {
@@ -742,20 +718,47 @@ video {
   width: 65px;
 }
 
+.w-\[683px\] {
+  width: 683px;
+}
+
 .w-mxWidth {
   width: 1170px;
+}
+
+.w-\[370px\] {
+  width: 370px;
 }
 
 .max-w-\[1920px\] {
   max-width: 1920px;
 }
 
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
 .max-w-\[52\%\] {
   max-width: 52%;
 }
 
+.translate-x-10 {
+  --tw-translate-x: 2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-45 {
   --tw-translate-x: -45px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[5px\] {
+  --tw-translate-x: 5px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[26px\] {
+  --tw-translate-y: 26px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -791,6 +794,11 @@ video {
   border-color: rgb(102 151 174 / 0.1);
 }
 
+.bg-boldlGrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+}
+
 .bg-lightGrey {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
@@ -801,8 +809,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[bottom-left_200px\] {
-  background-color: bottom-left 200px;
+.bg-dirtWhite {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
 }
 
 .bg-gift-pattern {
@@ -839,20 +848,12 @@ video {
   --tw-gradient-to-position: 100%;
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-}
-
-.bg-left {
-  background-position: left;
-}
-
-.bg-\[left_200px\] {
-  background-position: left 200px;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-\[20px\] {
+  padding: 20px;
 }
 
 .px-\[24px\] {
@@ -879,6 +880,10 @@ video {
   padding-bottom: 130px;
 }
 
+.pb-\[194px\] {
+  padding-bottom: 194px;
+}
+
 .pl-\[35px\] {
   padding-left: 35px;
 }
@@ -893,6 +898,10 @@ video {
 
 .pt-\[30px\] {
   padding-top: 30px;
+}
+
+.pt-\[60px\] {
+  padding-top: 60px;
 }
 
 .text-left {
