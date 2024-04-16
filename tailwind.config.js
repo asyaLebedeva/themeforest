@@ -29,7 +29,8 @@ module.exports = {
         hzGrey: '#6697ae',
         lightGrey: '#f9f9f9',
         border: 'rgba(236,236,236,0.49)',
-        boldlGrey: '#eee', 
+        boldlGrey: '#eee',
+        elGrey: '#ddd',
       }
     },
     plugins: [],
