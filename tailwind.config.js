@@ -25,7 +25,7 @@ module.exports = {
         myPink: '#ff5a5a',
         dirtBlue: '#345b6e',
         dirtWhite: '#ccc',
-        mbYellow: 'e5e5e5',
+        mbYellow: '#e5e5e5',
         hzGrey: '#6697ae',
         lightGrey: '#f9f9f9',
         border: 'rgba(236,236,236,0.49)',
