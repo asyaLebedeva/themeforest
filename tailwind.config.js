@@ -14,6 +14,7 @@ module.exports = {
       },
       boxShadow: {
         'custom': '0px 5px 104px 26px rgba(0, 0, 0, 0.15)',
+        'cardShadow': '0px 1px 22px 3px rgba(0, 0, 0, 0.07)',
       },
       backgroundImage: {
         'hand-pattern': "url('../img/hand.svg')",
@@ -31,6 +32,9 @@ module.exports = {
         border: 'rgba(236,236,236,0.49)',
         boldlGrey: '#eee',
         elGrey: '#ddd',
+        black: '#444',
+        grey: '#999',
+        two: '#222',
       }
     },
     plugins: [],
