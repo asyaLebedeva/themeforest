@@ -20,6 +20,7 @@ module.exports = {
         'hand-pattern': "url('../img/hand.svg')",
         'gift-pattern': "url('../img/icon-gift.svg')",
         'winter': "url('../img/winter.svg')",
+        'xmax': "url('../img/footer-img.png')",
       },
       colors: {
         darkPink: '#d93939',
