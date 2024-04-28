@@ -201,10 +201,9 @@
     </div>
   </section>
   <footer class="bg-xmax bg-no-repeat">
-    <div class="container">
-      <h2 class="text-[32px] font-bold text-white font-['Abril_Fatface'] mb-[30px] tracking-wider">Send Message to Santa</h2>
-      <div class="flex mb-[90px]">
-        <ul class="text-white font-['Arimo'] text-xl leading-8 font-normal pt-[50px] mb-[90px]">
+    <div class="container flex justify-around">
+      <div class="flex mt-[97px] mb-[90px]">
+        <ul class="text-white font-['Arimo'] text-xl leading-8 font-normal">
           <li class="mb-[50px] flex">
               <div class="w-[70px] h-[70px] border border-white rounded-full inline-flex justify-center items-center mr-5">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
@@ -237,8 +236,14 @@
           </li>
         </ul>
       </div>
-      <div>
-        <!--<p class="font-['Arimo'] text-base leading-8 font-normal text-black opacity-60">Copyright 2019. All Rights Reserved by DESIGNER</p>-->
+      <div class="mt-[35px]">
+        <h2 class="text-[32px] font-bold text-white font-['Abril_Fatface'] mb-[30px] tracking-wider">Send Message to Santa</h2>
+        <form>
+          <label for="firstname"></label>
+            <input class="mr-[10px] border border-white-700 w-[380px] pt-[25px] pb-[23px] pl-[21px] font-['Arimo'] text-[16px] leading-8 bg-transparent text-white placeholder:text-white placeholder:font-['Arimo'] placeholder:text-[16px] placeholer:leading-8 placeholder:opacity-70" type="text" id="firstname" name="name" placeholder="Your Name Here" required>
+          <label for="mail"></label>
+          <input class="border border-white-700 w-[380px] pt-[25px] pb-[23px] pl-[21px] font-['Arimo'] text-[16px] leading-8 bg-transparent text-white placeholder:text-white placeholder:font-['Arimo'] placeholder:text-[16px] placeholer:leading-8 placeholder:opacity-70" type="email" id="mail" placeholder="Your Name Here" required>
+        </form>
       </div>
     </div>
   </footer>
