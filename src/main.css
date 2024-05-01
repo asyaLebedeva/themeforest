@@ -6,5 +6,8 @@
   html {
     font-family: "Arimo", system-ui, sans-serif;
   }
-}
 
+  .custom-ui {
+    background-color: #ffffff;
+  }
+}
