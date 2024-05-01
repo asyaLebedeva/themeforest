@@ -6,7 +6,9 @@
   html {
     font-family: "Arimo", system-ui, sans-serif;
   }
+}
 
+@layer components {
   .custom-ui {
     background-color: #ffffff;
   }
