@@ -17,6 +17,10 @@ module.exports = {
       boxShadow: {
         "custom": "0px 5px 104px 26px rgba(0, 0, 0, 0.15)",
         "cardShadow": "0px 1px 22px 3px rgba(0, 0, 0, 0.07)",
+        "pinkNeon": "0px 5px 12px 0px rgba(255,204,204,0.75)",
+        "greyNeon": "0px 5px 12px 0px rgba(142,136,136,0.75)",
+        "lightNeon": "0px 5px 12px 0px rgba(248,128,128,0.75)",
+        "insetPink": "inset -5px -5px 10px 0px rgba(255,204,204,0.55)"
       },
       backgroundImage: {
         "hand-pattern": "url('../img/hand.svg')",
