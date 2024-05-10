@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "media",
   content: [
     "./index.html"
   ],
@@ -9,7 +10,7 @@ module.exports = {
     },
     extend: {
       width: {
-        "mxWidth": "1170px",
+        "mx-1170": "1170px",
       },
       translate: {
         "45": "-45px",
@@ -20,7 +21,8 @@ module.exports = {
         "pinkNeon": "0px 5px 12px 0px rgba(255,204,204,0.75)",
         "greyNeon": "0px 5px 12px 0px rgba(142,136,136,0.75)",
         "lightNeon": "0px 5px 12px 0px rgba(248,128,128,0.75)",
-        "insetPink": "inset -5px -5px 10px 0px rgba(255,204,204,0.55)"
+        "insetPink": "inset -5px -5px 10px 0px rgba(255,204,204,0.55)",
+        "btn-shadow": "0px 5px 57px 3px rgba(217,57,57,0.5)"
       },
       backgroundImage: {
         "hand-pattern": "url('../img/hand.svg')",
