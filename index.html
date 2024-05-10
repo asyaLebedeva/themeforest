@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>01_Home_Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
@@ -14,16 +15,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="public/styles.css">
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
 </head>
 <body class="my-0 mx-auto max-w-[1920px]">
-  <header class="header pt-8 bg-gradient-to-r from-myPink from-0% to-darkPink to-100% dark:bg-bgMain">
-    <div class="container w-mxWidth my-0 mx-auto text-white text-left pb-32">
-      <div>
+  <header class="dark:bg-bgMain header pt-8 bg-gradient-to-r from-myPink from-0% to-darkPink to-100%">
+    <div class="container w-x-1170 my-0 mx-auto text-white text-left pb-32">
+      <div class="w-mx-1170 flex justify-between">
         <picture>
           <source src="img/fir-tree.svg">
           <img src="img/fir-tree.svg" alt="logo">
         </picture>
-        <button></button> <!--burger-->
+        <button class="media toggle-dark toggle-light toggle w-[80px] h-[80px] bg-[#ff5a5a] dark:bg-bgMain shadow-btn-shadow rounded-full" id="theme-toggle" type="button">
+          <i class="fa fa-align-right text-white text-[16px] text-base leading-7"></i>
+        </button>
       </div>
       <h1 class="text-7xl font-bold mb-10 font-['Abril_Fatface'] tracking-wider">Merry<br>Christmas</h1>
       <p class="font-normal text-lg text-left mb-10 max-w-[52%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim quis<br>nostrud exercitation ullamco laboris nisi ut aliquip.</p>
@@ -31,7 +42,7 @@
     </div>
   </header>
   <section class="donate mb-28">
-    <div class="container w-mxWidth my-0 mx-auto flex pt-28">
+    <div class="container w-mx-1170 my-0 mx-auto flex pt-28">
       <div class="mr-8">
         <img class="w-[570px] h-[505px]" src="img/background.svg" alt="background">
       </div>
@@ -51,7 +62,7 @@
   </section>
 
   <section class="action bg-lightGrey bg-winter bg-no-repeat top-0 left-[-25rem] mb-16">
-    <div class="container w-mxWidth my-0 mx-auto justify-center flex">
+    <div class="container w-mx-1170 my-0 mx-auto justify-center flex">
       <div class="w-1/2 flex items-center text-left max-w-[250px]">
         <h2 class="font-['Lobster'] text-7xl leading-10 font-normal translate-x-10">Santa<span class="inline-block text-5xl"><br>is Coming....</span></h2>
       </div>
@@ -70,7 +81,7 @@
   </section>
 
   <section class="mb-24">
-    <div class="container w-mxWidth my-0 mx-auto flex pt-24">
+    <div class="container w-mx-1170 my-0 mx-auto flex pt-24">
       <div class="w-2/4 mr-12">
         <img class="opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
         <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink mb-10">Christmas Party</h2>
@@ -99,7 +110,7 @@
         <div>
       </div>
     </div>
-    <div class="glide -mt-24 overflow-hidden w-mxWidth mx-auto my-0">
+    <div class="glide -mt-24 overflow-hidden w-mx-1170 mx-auto my-0">
       <div class="w-[370px]" data-glide-el="track">
         <ul class="glide__slides relative overflow-hidden flex mb-10">
           <li class="glide__slide w-[370px]"><div class="bg-dirtWhite w-[370px] h-[420px]"></div></li>
@@ -123,16 +134,16 @@
     </div>
   </section>
 
-  <section class="mb-24">
+  <section class="mb-12">
     <div class="container">
       <img class="my-0 mx-[auto] opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
       <h2 class="relative font-['Abril_Fatface'] text-[32px] leading-7 text-myPink mb-[65px] text-center"><span class="inline-block after:absolute after:w-[50px] after:h-[3px] after:top-[45px] after:left-[48.5%] after:bg-mbYellow"></span>Latest News</h2>
       <div class="relative slider">
-        <div class="glide-02 overflow-hidden w-mxWidth mx-auto my-0">
+        <div class="glide-02 overflow-hidden w-mx-1170 mx-auto my-0">
           <div data-glide-el="track">
-            <ul class="glide__slides relative overflow-hidden flex">
-              <li class="glide__slide mr-[30px] shadow-cardShadow">
-                <div class="w-[370px] h-[630px]">
+            <ul class="glide__slides relative overflow-hidden flex min-h-[43rem] w-mx-1170">
+              <li class="glide__slide mr-[30px] w-[370px] h-[632px] shadow-cardShadow">
+                <div>
                   <img class="w-[370px] h-[270px]" src="img/backimg.svg">
                   <div class="py-10 px-[30px]">
                     <div class="flex items-center mb-6">
@@ -148,8 +159,8 @@
                   </div>
                 </div>
               </li>
-              <li class="glide__slide mr-[30px] shadow-cardShadow">
-                <div class="w-[370px] h-[630px]">
+              <li class="glide__slide mr-[30px] shadow-cardShadow w-[370px] h-[632px]">
+                <div>
                   <img class="w-[370px] h-[270px]" src="img/backimg.svg">
                   <div class="py-10 px-[30px]">
                     <div class="flex items-center mb-6">
@@ -165,8 +176,8 @@
                   </div>
                 </div>
               </li>
-              <li class="glide__slide mr-[30px] shadow-cardShadow">
-                <div class="w-[370px] h-[630px]">
+              <li class="glide__slide mr-[30px] shadow-cardShadow w-[370px] h-[632px]">
+                <div>
                   <img class="w-[370px] h-[270px]" src="img/backimg.svg">
                   <div class="py-10 px-[30px]">
                     <div class="flex items-center mb-6">
@@ -184,7 +195,7 @@
               </li>
             </ul>
           </div>
-          <div class="flex items-center justify-center w-full gap-2 p-4" data-glide-el="controls">
+          <div class="flex items-center justify-center w-full p-0" data-glide-el="controls">
             <button class="absolute top-[50%] left-[60px] flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
@@ -201,7 +212,7 @@
     </div>
   </section>
   <footer class="bg-xmax bg-no-repeat">
-    <div class="container flex justify-between w-mxWidth">
+    <div class="container flex justify-between w-mx-1170">
       <div class="flex mt-24 mb-8">
         <ul class="text-white font-['Arimo'] text-xl leading-8 font-normal">
           <li class="mb-12 flex">
@@ -255,7 +266,7 @@
       </div>
     </div>
     <div class="w-[100%] h-16 border-x-0 border border-top border-white border-opacity-20 flex">
-      <div class="my-0 mx-auto flex w-mxWidth items-center justify-between">
+      <div class="my-0 mx-auto flex w-mx-1170 items-center justify-between">
         <p class="text-white opacity-60 font-['Arimo'] text-base leading-8">Copyright 2019. All Rights Reserved by DESIGNER</p>
         <ul class="flex border border-x-white border-y-0 border-opacity-20">
           <li class="border border-y-0 border-right border-white border-opacity-20">
@@ -319,4 +330,5 @@
     });
     glideTwo.mount();
 </script>
+<script src="js/main.js"></script>
 </html>
