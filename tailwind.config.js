@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "media",
+  darkMode: "class",
   content: [
     "./index.html"
   ],
@@ -22,13 +22,14 @@ module.exports = {
         "greyNeon": "0px 5px 12px 0px rgba(142,136,136,0.75)",
         "lightNeon": "0px 5px 12px 0px rgba(248,128,128,0.75)",
         "insetPink": "inset -5px -5px 10px 0px rgba(255,204,204,0.55)",
-        "btn-shadow": "0px 5px 57px 3px rgba(217,57,57,0.5)"
+        "btn-shadow": "0px 5px 57px 3px rgba(217,57,57,0.5)",
+        "box-night": "0px 5px 57px 3px #25788c",
       },
       backgroundImage: {
-        "hand-pattern": "url('../img/hand.svg')",
-        "gift-pattern": "url('../img/icon-gift.svg')",
+        "hand": "url('../img/hand.svg')",
         "winter": "url('../img/winter.svg')",
         "xmax": "url('../img/footer-img.png')",
+        "xnight": "url('../img/adult-xmax.png')",
       },
       colors: {
         darkPink: "#d93939",
@@ -46,10 +47,13 @@ module.exports = {
         two: "#222",
 
         /*darkmode*/
-        bgMain: "#3094aa",
+        night: "#3094aa",
+        txtNight: "#25788c",
+        bnight: "#1e7a8e",
       }
     },
-    plugins: [],
+    plugins: [
+      ],
   }
 }
 
