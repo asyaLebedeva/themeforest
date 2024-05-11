@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +15,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="public/styles.css">
-  <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
-</script>
 </head>
-<body class="my-0 mx-auto max-w-[1920px]">
-  <header class="dark:bg-bgMain header pt-8 bg-gradient-to-r from-myPink from-0% to-darkPink to-100%">
-    <div class="container w-x-1170 my-0 mx-auto text-white text-left pb-32">
-      <div class="w-mx-1170 flex justify-between">
-        <picture>
-          <source src="img/fir-tree.svg">
-          <img src="img/fir-tree.svg" alt="logo">
-        </picture>
-        <button class="media toggle-dark toggle-light toggle w-[80px] h-[80px] bg-[#ff5a5a] dark:bg-bgMain shadow-btn-shadow rounded-full" id="theme-toggle" type="button">
-          <i class="fa fa-align-right text-white text-[16px] text-base leading-7"></i>
-        </button>
+<body class="my-0 mx-auto max-w-[1920px] bg-white">
+  <header class="header bg-gradient-to-r from-myPink from-0% to-darkPink to-100% dark:bg-none">
+    <div class="dark:bg-night pt-8">
+      <div class="w-mx-1170 my-0 mx-auto text-white text-left pb-32">
+        <div class="flex justify-between">
+          <picture>
+            <source src="img/fir-tree.svg">
+            <img src="img/fir-tree.svg" alt="logo">
+          </picture>
+          <div>
+            <button class="w-[80px] h-[80px] bg-[#ff5a5a] dark:bg-bnight shadow-btn-shadow dark:shadow-box-night rounded-full"  type="button">
+              <i class="fa fa-align-right text-white text-[16px] text-base leading-7"></i>
+            </button>
+            <button class="flex justify-center items-center w-[80px] h-[80px] bg-[#ff5a5a] dark:bg-bnight shadow-btn-shadow dark:shadow-box-night rounded-full mt-5"  type="button">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-7xl font-bold mb-10 font-['Abril_Fatface'] tracking-wider">Merry<br>Christmas</h1>
+          <p class="font-normal text-lg text-left mb-10 max-w-[52%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim quis<br>nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          <a class="text-2xl text-left bg-white hover:shadow-pinkNeon px-8 py-4 rounded-[30px] text-myPink font-normal leading-7 dark:shadow-box-night dark:text-txtNight" href="#">Join Us</a>
+        </div>
       </div>
-      <h1 class="text-7xl font-bold mb-10 font-['Abril_Fatface'] tracking-wider">Merry<br>Christmas</h1>
-      <p class="font-normal text-lg text-left mb-10 max-w-[52%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim quis<br>nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-      <a class="text-2xl text-left bg-white hover:shadow-pinkNeon px-8 py-4 rounded-[30px] text-myPink font-normal leading-7" href="#">Join Us</a>
     </div>
   </header>
   <section class="donate mb-28">
@@ -48,14 +51,22 @@
       </div>
       <div class="w-2/4">
         <img class="opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
-        <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink mb-10">Donate &amp; Gift
+        <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink mb-10 dark:text-txtNight">Donate &amp; Gift
         </h2>
         <p class="relative text-base mb-8 leading-6"><span class="inline-block after:absolute after:w-[50px] after:h-[3px] after:-top-[25px] after:left-0 after:bg-mbYellow"></span>A Christmas gift or Christmas present is a gift given in celebration of Christmas. Christmas gifts are often exchanged on Christmas Day itself, December 25, or on the last day of the twelve-day Christmas season, Twelfth Night (January 5). The practice of giving gifts during Christmastide, according to Christian tradition, is symbolic of the presentation of the gifts by the Three Wise Men to the infant Jesus.</p>
         <p class="text-base mb-10 leading-6">The tradition was also embraced by retailers, for whom the weeks and, eventually, the entire month before Christmas became a very profitable period. Around the turn of the 20th century retailers started directing marketing efforts at children in the hopes that they would entice the parents to buy more goods.
         </p>
         <div class="flex">
-          <button class="relative w-[167px] inline-block bg-gradient-to-r hover:shadow-greyNeon from-myPink from-0% to-darkPink to-100% py-5 pr-7 pl-9 rounded-[32px] text-right text-xl leading-7 text-white mr-5"><span class="absolute w-[29px] h-[25px] bg-hand-pattern bg-no-repeat translate-x-45"></span>Donate</button>
-          <button class="relative inline-block w-[65px] h-[65px] hover:shadow-lightNeon bg-white rounded-full shadow-custom"><span class="absolute w-[24px] h-[25px] bg-gift-pattern bg-no-repeat top-5 left-5"></span></button>
+          <button class="flex justify-between w-[167px] hover:shadow-greyNeon bg-gradient-to-r from-myPink from-0% to-darkPink to-100% py-5 px-8 rounded-[32px] mr-5 dark:hidden">
+            <img src="img/hand.svg" alt="hand-and-heart">
+            <span class="text-right text-xl leading-7 text-white">Donate</span></button>
+
+          <button class="hidden dark:flex bg-txtNight justify-between w-[167px] hover:shadow-greyNeon py-5 px-8 rounded-[32px] mr-5">
+              <img src="img/hand.svg" alt="hand-and-heart">
+              <span class="text-right text-xl leading-7 text-white">Donate</span></button>
+          <button class="flex justify-center items-center w-[65px] h-[65px] hover:shadow-lightNeon bg-white rounded-full shadow-custom">
+            <svg class="dark:stroke-[#25778b]" width="24px" height="25px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#ff5a5a" fill="none"><polyline points="37.27 31.01 50.84 31.01 50.84 56.16 13.19 56.16 13.19 31.01 26.76 31.01" stroke-linecap="round"/><path d="M26.76,31H10.58a1,1,0,0,1-1-1v-5.2a1,1,0,0,1,1-1H53.42a1,1,0,0,1,1,1V30a1,1,0,0,1-1,1H37.27" stroke-linecap="round"/><path d="M45.73,9.86a6.5,6.5,0,0,0-3.51-1.6c-5.29-.57-7.08,8.12-9.7,14.33a.5.5,0,0,0,.65.65c6.17-2.62,14.46-4.47,14.33-9.69A5.3,5.3,0,0,0,45.73,9.86Z" stroke-linecap="round"/><path d="M21.79,7.86a6.44,6.44,0,0,0-3.5,1.6,5.32,5.32,0,0,0-1.78,3.69c-.13,5.22,8.16,7.07,14.33,9.69a.5.5,0,0,0,.65-.65C28.87,16,27.08,7.29,21.79,7.86Z" stroke-linecap="round"/><polygon points="37.27 45.78 32 42.78 26.76 45.78 26.76 23.77 37.27 23.77 37.27 45.78" stroke-linecap="round"/></svg>
+          </button>
         </div>
       </div>
     </div>
@@ -64,13 +75,13 @@
   <section class="action bg-lightGrey bg-winter bg-no-repeat top-0 left-[-25rem] mb-16">
     <div class="container w-mx-1170 my-0 mx-auto justify-center flex">
       <div class="w-1/2 flex items-center text-left max-w-[250px]">
-        <h2 class="font-['Lobster'] text-7xl leading-10 font-normal translate-x-10">Santa<span class="inline-block text-5xl"><br>is Coming....</span></h2>
+        <h2 class="font-['Lobster'] text-7xl leading-10 font-normal translate-x-10 text-dirtBlue">Santa<span class="inline-block text-5xl"><br>is Coming....</span></h2>
       </div>
       <picture>
         <img class="translate-x-2 translate-y-6" src="img/santa.svg" alt="santa">
       </picture>
       <div class="w-1/2">
-        <ul class="flex font-['Abril_Fatface'] text-myPink text-2xl leading-8 font-normal h-[367px] bg-lightGrey">
+        <ul class="flex font-['Abril_Fatface'] text-myPink dark:text-txtNight text-2xl leading-8 font-normal h-[367px] bg-lightGrey">
           <li class="flex flex-col text-center w-[156px] h-[367px] justify-center border-hzGrey/[0.1] border-r"><div class="px-6">364<p>Days</p></div></li>
           <li class="flex flex-col text-center w-[156px] h-[367px] justify-center border-hzGrey/[0.1] border-r"><div class="px-6">23<p>Hours</p></div></li>
           <li class="flex flex-col text-center w-[156px] h-[367px] justify-center border-hzGrey/[0.1] border-r"><div class="px-6">59<p>Minutes</p></div></li>
@@ -84,13 +95,15 @@
     <div class="container w-mx-1170 my-0 mx-auto flex pt-24">
       <div class="w-2/4 mr-12">
         <img class="opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
-        <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink mb-10">Christmas Party</h2>
+        <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink dark:text-txtNight mb-10">Christmas Party</h2>
         <p class="relative text-base mb-8 leading-6"><span class="inline-block after:absolute after:w-[50px] after:h-[3px] after:-top-[25px] after:left-0 after:bg-mbYellow"></span>Christmas is an annual festival commemorating the birth of Jesus Christ, observed on December 25 as a religious and cultural celebration among billions of people around the world. A feast central to the Christian liturgical year, it is preceded by the season of Advent or the Nativity Fast and initiates the season of Christmastide, which historically in the West lasts twelve days and culminates on Twelfth Night; in some traditions, Christmastide includes an octave. Christmas Day is a public holiday in many of the world's nations, is celebrated religiously by a majority of Christians, as well as culturally by many non-Christians, and forms an integral part of the holiday season centered around it.</p>
         <p class="text-base mb-10 leading-6">Although the month and date of Jesus' birth are unknown, the church in the early fourth century fixed the date as December 25. This corresponds to the date of the solstice on the Roman calendar</p>
-        <button class="w-[167px] inline-block hover:shadow-greyNeon bg-gradient-to-r from-myPink from-0% to-darkPink to-100% p-5 rounded-[32px] text-xl leading-6 text-white mr-5">Join the Party</button>
+        <button class="dark:hidden w-[167px] inline-block hover:shadow-greyNeon bg-gradient-to-r from-myPink from-0% to-darkPink to-100% p-5 rounded-[32px] text-xl leading-6 text-white mr-5">Join the Party</button>
+        <button class="hidden dark:inline-block w-[167px] hover:shadow-greyNeon bg-txtNight p-5 rounded-[32px] text-xl leading-6 text-white mr-5">Join the Party</button>
       </div>
       <div class="mr-8">
-        <img class="w-[683px] h-[554px]" src="img/santa-party.svg" alt="Dj-Santa">
+        <img class="dark:hidden w-[683px] h-[554px]" src="img/santa-party.svg" alt="Dj-Santa">
+        <img class="hidden dark:block w-[683px] h-[554px]" src="img/santa-adult-party.svg" alt="Dj-Santa">
       </div>
     </div>
   </section>
@@ -101,11 +114,12 @@
         <div class="w-2/4"></div>
           <div class="w-2/4">
             <img class="opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
-            <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink mb-10">Christmas Wish &amp; Last Years Party</h2>
+            <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink dark:text-txtNight mb-10">Christmas Wish &amp; Last Years Party</h2>
             <p class="relative w-[655px] text-base mb-8 leading-6"><span class="inline-block after:absolute after:w-[50px] after:h-[3px] after:-top-[25px] after:left-0 after:bg-mbYellow"></span>Inspirational Christmas Greetings Messages for your loved ones – whether you’re sending a small gift to grandma or need something special to write for your mum, you will find plenty of inspiration here!</p>
             <p class="w-[655px] text-base mb-10 leading-6">If you’re still on the hunt for the perfect gift, take a look at our selection of fabulous festive flowers and Christmas hampers at <a>Kisimusi.com</a>.</p>
             <p class="w-[655px] text-base mb-10 leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="w-[167px] inline-block hover:shadow-greyNeon bg-gradient-to-r from-myPink from-0% to-darkPink to-100% p-5 rounded-[32px] text-xl leading-6 text-white mr-5 mb-[12.1rem]">Send Wishes</button>
+            <button class="dark:hidden w-[167px] inline-block hover:shadow-greyNeon bg-gradient-to-r from-myPink from-0% to-darkPink to-100% p-5 rounded-[32px] text-xl leading-6 text-white mr-5 mb-[12.1rem]">Send Wishes</button>
+            <button class="hidden w-[167px] dark:inline-block hover:shadow-greyNeon dark:bg-txtNight p-5 rounded-[32px] text-xl leading-6 text-white mr-5 mb-[12.1rem]">Send Wishes</button>
           </div>
         <div>
       </div>
@@ -119,12 +133,12 @@
         </ul>
       </div>
       <div class="flex items-center justify-center w-full gap-2 p-4" data-glide-el="controls">
-        <button class="inline-flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
+        <button class="inline-flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink dark:hover:border-txtNight dark:hover:text-txtNight focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
           </svg>
         </button>
-        <button class="inline-flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
+        <button class="inline-flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink dark:hover:border-txtNight dark:hover:text-txtNight  focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
           </svg>
@@ -137,7 +151,7 @@
   <section class="mb-12">
     <div class="container">
       <img class="my-0 mx-[auto] opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
-      <h2 class="relative font-['Abril_Fatface'] text-[32px] leading-7 text-myPink mb-[65px] text-center"><span class="inline-block after:absolute after:w-[50px] after:h-[3px] after:top-[45px] after:left-[48.5%] after:bg-mbYellow"></span>Latest News</h2>
+      <h2 class="relative font-['Abril_Fatface'] text-[32px] leading-7 text-myPink dark:text-txtNight mb-[65px] text-center"><span class="inline-block after:absolute after:w-[50px] after:h-[3px] after:top-[45px] after:left-[48.5%] after:bg-mbYellow"></span>Latest News</h2>
       <div class="relative slider">
         <div class="glide-02 overflow-hidden w-mx-1170 mx-auto my-0">
           <div data-glide-el="track">
@@ -196,12 +210,12 @@
             </ul>
           </div>
           <div class="flex items-center justify-center w-full p-0" data-glide-el="controls">
-            <button class="absolute top-[50%] left-[60px] flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
+            <button class="absolute top-[50%] left-[60px] flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink dark:hover:border-txtNight dark:hover:text-txtNight focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
               </svg>
             </button>
-            <button class="absolute top-[50%] right-[60px] flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
+            <button class="absolute top-[50%] right-[60px] flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink dark:hover:border-txtNight dark:hover:text-txtNight focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>
@@ -211,7 +225,7 @@
       </div>
     </div>
   </section>
-  <footer class="bg-xmax bg-no-repeat">
+  <footer class="bg-xmax dark:bg-xnight bg-no-repeat">
     <div class="container flex justify-between w-mx-1170">
       <div class="flex mt-24 mb-8">
         <ul class="text-white font-['Arimo'] text-xl leading-8 font-normal">
@@ -261,7 +275,7 @@
             <label for="message"></label>
               <textarea class="cursor-pointer hover:shadow-insetPink w-[770px] h-[124px] border border-white-700 bg-transparent font-['Arimo'] text-base leading-8" name="message" id="message"></textarea>
           </div>
-          <button class="w-[770px] h-[56px] bg-white text-myPink hover:shadow-pinkNeon text-center font-['Arimo'] text-xl leading-8 font-normal">Submit</button>
+          <button class="w-[770px] h-[56px] bg-white text-myPink dark:text-txtNight hover:shadow-pinkNeon text-center font-['Arimo'] text-xl leading-8 font-normal" type="submit">Submit</button>
         </form>
       </div>
     </div>
@@ -270,7 +284,7 @@
         <p class="text-white opacity-60 font-['Arimo'] text-base leading-8">Copyright 2019. All Rights Reserved by DESIGNER</p>
         <ul class="flex border border-x-white border-y-0 border-opacity-20">
           <li class="border border-y-0 border-right border-white border-opacity-20">
-            <a class="w-12 h-16 flex items-center justify-center text-white hover:bg-white hover:text-myPink" href="https://www.facebook.com/">
+            <a class="w-12 h-16 flex items-center justify-center text-white hover:bg-white hover:text-myPink dark:hover:text-txtNight" href="https://www.facebook.com/">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-4">
                 <path fill="currentColor"
                   d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
@@ -279,7 +293,7 @@
             </a>
           </li>
           <li class="border border-y-0 border-right border-white border-opacity-20">
-            <a class="flex w-12 h-16 items-center justify-center text-white hover:bg-white hover:text-myPink" href="https://twitter.com/?lang=en">
+            <a class="flex w-12 h-16 items-center justify-center text-white hover:bg-white hover:text-myPink dark:hover:text-txtNight" href="https://twitter.com/?lang=en">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" class="h-4">
                 <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
                 </path>
@@ -287,7 +301,7 @@
             </a>
           </li>
           <li class="border border-y-0 border-right border-white border-opacity-20">
-            <a class="flex w-12 h-16 items-center justify-center text-white hover:bg-white hover:text-myPink" href="https://www.linkedin.com/">
+            <a class="flex w-12 h-16 items-center justify-center text-white hover:bg-white hover:text-myPink dark:hover:text-txtNight" href="https://www.linkedin.com/">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-4">
                 <path fill="currentColor"
                 d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
@@ -295,7 +309,7 @@
               </svg>
             </a>
           </li>
-          <li><a class="w-12 h-16 flex justify-center items-center text-white hover:bg-white hover:text-myPink" href="https://www.pinterest.com/">
+          <li><a class="w-12 h-16 flex justify-center items-center text-white hover:bg-white hover:text-myPink dark:hover:text-txtNight" href="https://www.pinterest.com/">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512" class="h-4">
               <path
                 d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z">
@@ -330,5 +344,4 @@
     });
     glideTwo.mount();
 </script>
-<script src="js/main.js"></script>
 </html>
