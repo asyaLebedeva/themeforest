@@ -1009,11 +1009,6 @@ video {
   background-color: rgb(255 90 90 / var(--tw-bg-opacity));
 }
 
-.bg-bnight {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 122 142 / var(--tw-bg-opacity));
-}
-
 .bg-boldlGrey {
   --tw-bg-opacity: 1;
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
@@ -1270,11 +1265,6 @@ video {
   color: rgb(221 221 221 / var(--tw-text-opacity));
 }
 
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
 .text-grey {
   --tw-text-opacity: 1;
   color: rgb(153 153 153 / var(--tw-text-opacity));
@@ -1301,10 +1291,6 @@ video {
 
 .opacity-\[0\.07\] {
   opacity: 0.07;
-}
-
-.opacity-70 {
-  opacity: 0.7;
 }
 
 .shadow-btn-shadow {
@@ -1484,34 +1470,59 @@ video {
   background-color: rgb(48 148 170 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:bg-slate-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:bg-txtNight) {
   --tw-bg-opacity: 1;
   background-color: rgb(37 120 140 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-forest) {
+  background-image: url('../img/forest1.png');
 }
 
 :is(.dark .dark\:bg-none) {
   background-image: none;
 }
 
+:is(.dark .dark\:bg-skyforest) {
+  background-image: url('../img/forest-sky.png');
+}
+
+:is(.dark .dark\:bg-snow) {
+  background-image: url('../img/snow.png');
+}
+
 :is(.dark .dark\:bg-xnight) {
   background-image: url('../img/adult-xmax.png');
+}
+
+:is(.dark .dark\:bg-bottom) {
+  background-position: bottom;
+}
+
+:is(.dark .dark\:bg-center) {
+  background-position: center;
+}
+
+:is(.dark .dark\:bg-no-repeat) {
+  background-repeat: no-repeat;
 }
 
 :is(.dark .dark\:stroke-\[\#25778b\]) {
   stroke: #25778b;
 }
 
+:is(.dark .dark\:pt-\[10px\]) {
+  padding-top: 10px;
+}
+
 :is(.dark .dark\:text-txtNight) {
   --tw-text-opacity: 1;
   color: rgb(37 120 140 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:decoration-gray-500) {
-  text-decoration-color: #6b7280;
-}
-
-:is(.dark .dark\:opacity-70) {
-  opacity: 0.7;
 }
 
 :is(.dark .dark\:shadow-box-night) {
