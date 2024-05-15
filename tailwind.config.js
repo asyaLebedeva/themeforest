@@ -30,6 +30,11 @@ module.exports = {
         "winter": "url('../img/winter.svg')",
         "xmax": "url('../img/footer-img.png')",
         "xnight": "url('../img/adult-xmax.png')",
+        "forest": "url('../img/forest1.png')",
+        "snow": "url('../img/snow.png')",
+        "skyforest": "url('../img/forest-sky.png')",
+        "homeforest": "url('../img/home-forest.png')",
+        "lake": "url('../img/lake.png')",
       },
       colors: {
         darkPink: "#d93939",
