@@ -21,9 +21,9 @@
         } else {
                   document.documentElement.classList.remove('dark')
               }
-localStorage.theme = 'light'
-localStorage.theme = 'dark'
-localStorage.removeItem('theme')
+    localStorage.theme = 'light'
+    localStorage.theme = 'dark'
+    localStorage.removeItem('theme')
 </script>
 </head>
 <body class="my-0 mx-auto max-w-[1920px] bg-white">
@@ -57,12 +57,12 @@ localStorage.removeItem('theme')
       </div>
     </div>
   </header>
-  <section class="donate mb-28">
+  <section class="donate">
     <div class="container w-mx-1170 my-0 mx-auto flex pt-28">
       <div class="mr-8">
         <img class="w-[570px] h-[505px]" src="img/background.svg" alt="background">
       </div>
-      <div class="w-2/4">
+      <div class="w-2/4 mb-28">
         <img class="opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
         <h2 class="font-['Abril_Fatface'] text-3xl leading-7 text-myPink mb-10 dark:text-txtNight">Donate &amp; Gift
         </h2>
@@ -121,7 +121,7 @@ localStorage.removeItem('theme')
     </div>
   </section>
 
-  <section class="mb-24">
+  <section class="dark:bg-slate-800 dark:bg-snow dark:bg-bottom dark:bg-no-repeat">
     <div class="w-max-[100%]">
       <div class="flex pt-14 bg-boldlGrey">
         <div class="w-2/4"></div>
@@ -138,7 +138,7 @@ localStorage.removeItem('theme')
       </div>
     </div>
     <div class="glide -mt-24 overflow-hidden w-mx-1170 mx-auto my-0">
-      <div class="w-[370px]" data-glide-el="track">
+      <div class="w-[370px] mb-24" data-glide-el="track">
         <ul class="glide__slides relative overflow-hidden flex mb-10">
           <li class="glide__slide w-[370px]"><div class="bg-dirtWhite w-[370px] h-[420px]"></div></li>
           <li class="glide__slide w-[370px]"><div class="bg-dirtWhite w-[370px] h-[420px]"></div></li>
@@ -147,12 +147,12 @@ localStorage.removeItem('theme')
       </div>
       <div class="flex items-center justify-center w-full gap-2 p-4" data-glide-el="controls">
         <button class="inline-flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink dark:hover:border-txtNight dark:hover:text-txtNight focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
           </svg>
         </button>
         <button class="inline-flex items-center justify-center w-20 h-20 transition duration-300 border rounded-full text-elGrey border-elGrey hover:text-myPink hover:border-myPink dark:hover:border-txtNight dark:hover:text-txtNight  focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
           </svg>
         </button>
@@ -161,14 +161,14 @@ localStorage.removeItem('theme')
     </div>
   </section>
 
-  <section class="mb-12">
+  <section class="dark:bg-slate-800 dark:bg-forest dark:bg-no-repeat dark:bg-bottom dark:pt-[10px]">
     <div class="container">
       <img class="my-0 mx-[auto] opacity-[0.07]" src="/img/icon-horns.svg" alt="horns-logo">
       <h2 class="relative font-['Abril_Fatface'] text-[32px] leading-7 text-myPink dark:text-txtNight mb-[65px] text-center"><span class="inline-block after:absolute after:w-[50px] after:h-[3px] after:top-[45px] after:left-[48.5%] after:bg-mbYellow"></span>Latest News</h2>
       <div class="relative slider">
         <div class="glide-02 overflow-hidden w-mx-1170 mx-auto my-0">
           <div data-glide-el="track">
-            <ul class="glide__slides relative overflow-hidden flex min-h-[43rem] w-mx-1170">
+            <ul class="glide__slides relative overflow-hidden flex min-h-[43rem] w-mx-1170 mb-12">
               <li class="glide__slide mr-[30px] w-[370px] h-[632px] shadow-cardShadow">
                 <div>
                   <img class="w-[370px] h-[270px]" src="img/backimg.svg">
