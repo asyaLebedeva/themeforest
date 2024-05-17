@@ -24,6 +24,7 @@ module.exports = {
         "insetPink": "inset -5px -5px 10px 0px rgba(255,204,204,0.55)",
         "btn-shadow": "0px 5px 57px 3px rgba(217,57,57,0.5)",
         "box-night": "0px 5px 57px 3px #25788c",
+        "darkTheme": "0px 5px 57px 3px rgba(210, 245, 252, 0.5)",
       },
       backgroundImage: {
         "hand": "url('../img/hand.svg')",
@@ -32,9 +33,6 @@ module.exports = {
         "xnight": "url('../img/adult-xmax.png')",
         "forest": "url('../img/forest1.png')",
         "snow": "url('../img/snow.png')",
-        "skyforest": "url('../img/forest-sky.png')",
-        "homeforest": "url('../img/home-forest.png')",
-        "lake": "url('../img/lake.png')",
       },
       colors: {
         darkPink: "#d93939",
