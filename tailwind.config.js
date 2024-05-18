@@ -24,7 +24,12 @@ module.exports = {
         "insetPink": "inset -5px -5px 10px 0px rgba(255,204,204,0.55)",
         "btn-shadow": "0px 5px 57px 3px rgba(217,57,57,0.5)",
         "box-night": "0px 5px 57px 3px #25788c",
-        "darkTheme": "0px 5px 57px 3px rgba(210, 245, 252, 0.5)",
+        "box-light": "0px 3px 57px 3px rgba(210,245,252,0.4)",
+        /*"darkNeon": "0px 5px 12px 0px rgba(210,245,252,0.75)",*/
+      },
+      dropShadow: {
+        "DxS": "0 0.5px 0.5px rgba(255 255 255 / 1)",
+        "TxS": "0 1px 1px rgba(236 236 236 / 0.49)",
       },
       backgroundImage: {
         "hand": "url('../img/hand.svg')",
@@ -32,7 +37,7 @@ module.exports = {
         "xmax": "url('../img/footer-img.png')",
         "xnight": "url('../img/adult-xmax.png')",
         "forest": "url('../img/forest1.png')",
-        "snow": "url('../img/snow.png')",
+        "snow": "url('../img/snow1.png')",
       },
       colors: {
         darkPink: "#d93939",
