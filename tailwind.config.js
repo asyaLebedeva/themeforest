@@ -2,7 +2,8 @@
 module.exports = {
   darkMode: "class",
   content: [
-    "./index.html"
+    "./index.html",
+    "./index2.html",
   ],
   theme: {
     container: {
@@ -38,6 +39,8 @@ module.exports = {
         "xnight": "url('../img/adult-xmax.png')",
         "forest": "url('../img/forest1.png')",
         "snow": "url('../img/snow1.png')",
+        "transfer": "linear-gradient(90.0deg, #ff5a5a 0%, #d93939 100%)",
+        "newback": "url('../img/footer-transparent.png')",
       },
       colors: {
         darkPink: "#d93939",
