@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/styles.css">
+  <script>
+   (function() {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+        } else {
+                  document.documentElement.classList.remove('dark')
+              }
+    localStorage.theme = 'light'
+    localStorage.theme = 'dark'
+    localStorage.removeItem('theme')
+   })()
+</script>
+</head>
+  <body class="my-0 mx-auto max-w-[1920px] bg-white">
+    <header class="header bg-xmax bg-center bg-no-repeat dark:bg-none max-h-[350px]">
+      <div class=" dark:bg-night dark:bg-snow pt-8">
+        <div class="w-mx-1170 my-0 mx-auto text-white text-left pb-32">
+          <div class="flex justify-between border-b">
+            <picture class="mb-7">
+              <source src="img/fir-tree.svg">
+              <img src="img/fir-tree.svg" alt="logo">
+            </picture>
+            <div>
+              <button class="w-[80px] h-[80px] bg-[#ff5a5a] dark:bg-bnight shadow-btn-shadow dark:shadow-box-night rounded-full"  type="button">
+                <i class="fa fa-align-right text-white text-[16px] text-base leading-7"></i>
+              </button>
+            </div>
+          </div>
+          <div>
+            <button class="flex justify-center items-center w-[80px] h-[80px] bg-[#ff5a5a] text-2xl text-white dark:bg-bnight dark:shadow-box-night shadow-btn-shadow rounded-full mt-5"  id="theme-toggle" type="button">
+              <svg id="theme-toggle-dark-icon" class="hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+              </svg>
+              <svg id="theme-toggle-light-icon" class="hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+          </div>
+          <div class="text-center mb-7">
+            <h1 class="text-3xl font-normal font-['Abril_Fatface'] tracking-wider">Blog Details</h1>
+            <p class="font-normal text-lg"><a href="index.html">Home</a> / Blog Details</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="pt-24 mb-20">
+      <div class="my-0 mx-auto w-mx-1170 bg-white">
+        <div class="my-0 mx-auto mb-14">
+          <picture>
+            <source src="img/gback.png">
+            <img src="img/gback.png" alt="test-img">
+          </picture>
+        </div>
+        <div class="mb-14">
+          <ul class="flex w-mx-1170 justify-between">
+            <li>
+              <h3 class="text-[16px] text-xypink leading-5 mb-[8px]"><i class="fa fa-circle text-[10px] text-xypink font-normal mr-[3px]"></i>Posted by</h3>
+              <p class="font-normal text-[16px] leading-5 text-seven">Mickheal Jordan</p>
+            </li>
+            <li>
+              <h3 class="text-[16px] text-xypink leading-5 mb-[8px]"><i class="fa fa-circle text-[10px] text-xypink font-normal mr-[3px]"></i>Posted Date</h3>
+              <p class="font-normal text-[16px] leading-5 text-seven">26 May 2024</p>
+            </li>
+            <li>
+              <h3 class="text-[16px] text-xypink leading-5 mb-[8px]"><i class="fa fa-circle text-[10px] text-xypink font-normal mr-[3px]"></i>Category</h3>
+              <p class="font-normal text-[16px] leading-5 text-seven">Social Media Marketing</p>
+            </li>
+            <li>
+              <h3 class="text-[16px] text-xypink leading-5 mb-[8px]"><i class="fa fa-circle text-[10px] text-xypink font-normal mr-[3px]"></i>Reading Time</h3>
+              <p class="font-normal text-[16px] leading-5 text-seven">Approximately 8 Minutes</p>
+            </li>
+            <li>
+              <h3 class="text-[16px] text-xypink leading-5 mb-[8px]"><i class="fa fa-circle text-[10px] text-xypink font-normal mr-[3px]"></i>Last Update</h3>
+              <p class="font-normal text-[16px] leading-5 text-seven">26 May 2024</p>
+            </li>
+          </ul>
+        </div>
+        <h2 class="font-['Arimo'] text-2xl text-two font-normal leading-7 mb-8">Whether it’s head-scratching Victorian Christmas cards or creepy Christmas monsters. Talk about Christmas shows you watch on TV and try to review those shows.</h2>
+        <p class="mb-8 pl-5 text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorgna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo couat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+
+        <p class="mb-8 pl-5 text-black">officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto eatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <figcaption class="bg-[#f1f1f1] h-24 p-8 border-l-[3px] border-xypink mb-7">
+          <blockquote>
+            <p class="text-black italic font-normal text-base leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </blockquote>
+        </figcaption>
+        <div class="flex justify-between">
+          <div class="max-w-[670px]">
+            <p class="font-['Arimo'] text-black text-base leading-6 max-w-[670px] mb-7">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorgna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo couat.
+            </p>
+            <ul>
+              <li><p class="font-['Arimo'] text-base leading-4 font-normal mb-7">- Continuing our series of product showcases that started with the recently launched.</p></li>
+              <li><p class="font-['Arimo'] text-base leading-4 font-normal mb-7">- Today we’re going to take a look at Brand Ambassador</p></li>
+              <li><p class="font-['Arimo'] text-base leading-4 font-normal mb-7">- the potential to help build a profitable network of online influencers.</p></li>
+              <li><p class="font-['Arimo'] text-base leading-4 font-normal mb-7">- How do you go about making Facebook posts that will lead to conversions?</p></li>
+              <li><p class="font-['Arimo'] text-base leading-4 font-normal mb-7">- the potential to help build a profitable network of online influencers.</p></li>
+            </ul>
+          </div>
+          <div>
+            <img src="img/blog_img.png" alt="blog-test-img">
+          </div>
+        </div>
+        <div class="flex items-center mb-8">
+          <h3 class="text-[#151515] font-['Arimo'] text-xl leading-5 font-normal mr-3">Tags:</h3>
+          <ul class="flex">
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Blog</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Blog Details</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Single Blog</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Details</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Describe</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Full View</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Corporate</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Business</a></li>
+            <li class="border border-egrey p-[10px] mr-3"><a href="#" class="text-sm leading-4 font-normal">Christmas</a></li>
+            <li class="border border-egrey p-[10px]"><a href="#" class="text-sm leading-4 font-normal">Santa Claus</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center">
+          <h3 class="text-[#151515] font-['Arimo'] text-xl leading-5 font-normal mr-3">Share:</h3>
+          <ul class="flex">
+            <li>
+              <a class="border border-egrey p-[10px] mr-3 rounded-full w-10 h-10 flex items-center justify-center text-seven hover:bg-xypink hover:text-white dark:hover:bg-txtdark" href="https://www.facebook.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-4">
+                  <path fill="currentColor"
+                    d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="border border-egrey p-[10px] mr-3 rounded-full flex w-10 h-10 items-center justify-center text-seven hover:bg-xypink hover:text-white dark:hover:bg-txtdark" href="https://twitter.com/?lang=en">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" class="h-4">
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="border border-egrey p-[10px] mr-3 rounded-full w-10 h-10 flex justify-center items-center text-seven hover:bg-xypink hover:text-white dark:hover:bg-txtdark" href="https://www.pinterest.com/">
+                <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4"><path d="M5.077 9.457c0-.778.136-1.513.404-2.199a5.63 5.63 0 0 1 1.121-1.802 7.614 7.614 0 0 1 1.644-1.329 7.513 7.513 0 0 1 2.002-.844 8.57 8.57 0 0 1 2.185-.281c1.139 0 2.199.241 3.182.721a6.021 6.021 0 0 1 2.391 2.094c.614.915.919 1.95.919 3.104 0 .692-.068 1.369-.207 2.031a8.28 8.28 0 0 1-.646 1.913 6.605 6.605 0 0 1-1.082 1.617 4.723 4.723 0 0 1-1.568 1.114 4.962 4.962 0 0 1-2.045.417c-.489 0-.977-.115-1.459-.346-.482-.23-.828-.546-1.036-.951-.073.281-.173.687-.306 1.218-.128.53-.214.872-.252 1.027-.04.154-.114.411-.222.767a5.183 5.183 0 0 1-.281.769l-.344.674a7.98 7.98 0 0 1-.498.838c-.181.262-.405.575-.672.935l-.149.053-.099-.108c-.107-1.133-.162-1.811-.162-2.035 0-.663.079-1.407.235-2.233.153-.825.395-1.862.72-3.109.325-1.246.511-1.979.561-2.196-.229-.467-.345-1.077-.345-1.827 0-.599.187-1.16.562-1.688.376-.526.851-.789 1.427-.789.441 0 .783.146 1.028.439.246.292.366.66.366 1.109 0 .476-.158 1.165-.476 2.066-.318.902-.476 1.575-.476 2.022 0 .453.162.832.486 1.129a1.68 1.68 0 0 0 1.179.449c.396 0 .763-.09 1.104-.271a2.46 2.46 0 0 0 .849-.733 6.123 6.123 0 0 0 1.017-2.225c.096-.422.17-.823.216-1.2.049-.379.07-.737.07-1.077 0-1.247-.396-2.219-1.183-2.915-.791-.696-1.821-1.042-3.088-1.042-1.441 0-2.646.466-3.611 1.401-.966.932-1.452 2.117-1.452 3.554 0 .317.048.623.139.919.089.295.186.53.291.704.104.171.202.338.291.492.09.154.137.264.137.33 0 .202-.053.465-.16.79-.111.325-.242.487-.4.487-.015 0-.077-.011-.185-.034a2.21 2.21 0 0 1-.979-.605 3.17 3.17 0 0 1-.659-1.022 6.986 6.986 0 0 1-.352-1.169 4.884 4.884 0 0 1-.132-1.153z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="border border-egrey p-[10px] mr-3 rounded-full flex w-10 h-10 items-center justify-center text-seven hover:bg-xypink hover:text-white dark:hover:bg-txtdark" href="https://www.linkedin.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-4">
+                  <path fill="currentColor"
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="border border-egrey p-[10px] mr-3 rounded-full flex w-10 h-10 items-center justify-center text-seven hover:bg-xypink hover:text-white dark:hover:bg-txtdark">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512" class="h-4">
+                <path
+                  d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2 .6-8.7 .6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z" />
+              </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container w-mx-1170 my-0 mx-auto">
+        <div>
+          <h2>14 Comments</h2> <!-- 14 -current digit -->
+          <div id="comment-container">
+            <div>
+              <h3>Jassica Raon</h3>
+            </div>
+           <!-- Existing comments will go here -->
+          </div>
+    <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+    <br>
+    <button id="btn-post">Post</button>
+        </div>
+        <div></div>
+      </div>
+    </section>
+    </body>
+  </html>
